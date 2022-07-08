@@ -1,5 +1,5 @@
 <?php
-    include './db/login_function.php';
+        include './db/db_config.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 <body>
     <div class="login">
         <h1 class="title">Welcome To Manju Store</h1>
-        <form action="login.php" method="post">
+        <form method="post">
             <div class="wrapper">
                 <div class="inputs">
                     <input id="input" type="text" name="user_name" required>
@@ -40,3 +40,7 @@
 </body>
 
 </html>
+
+<?php
+    include './db/login_function.php';
+?>

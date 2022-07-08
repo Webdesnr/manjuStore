@@ -1,3 +1,7 @@
+<?php
+    include './db/check_login.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

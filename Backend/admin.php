@@ -1,5 +1,5 @@
 <?php
-    include './db/db_config.php';
+    // include './db/db_config.php';
     include './reusable_modules/header.php';
     include './reusable_modules/navbar.php';
     include './db/add_admin_function.php';
@@ -24,8 +24,8 @@
         <table>
             <tr>
                 <th>S.No</th>
-                <th>Id</th>
-                <th>Admin Name</th>
+                <th>Id/Password</th>
+                <th>Admin Name/User Name</th>
                 <th>Role</th>
                 <th>Status</th>
                 <th>Edit</th>
@@ -37,12 +37,13 @@
                         $sno = 0;
                         while($row = $result->fetch_assoc()){
                             $sno++;
-                            $admin_status = $row['admin_status'] == 1 ? 'persent' : 'absent';
+                            $admin_status = $row['admin_status'] == 1 ? 'ONLINE' : 'OFFLINE';
+                            $admin_role = strtoupper($row['admin_role']);
                                 echo "<tr>
                                 <td>{$sno}</td>
                                 <td>{$row['admin_id']}</td>
                                 <td>{$row['admin_name']}</td>
-                                <td>{$row['admin_role']}</td>
+                                <td>{$admin_role}</td>
                                 <td>{$admin_status}</td>
                                 <td>
                                     <button class='modify-btn'><a href = 'admin.php?id={$row['id']}'>Modify</a></button>

@@ -1,7 +1,7 @@
 <?php
     include './reusable_modules/header.php';
     include './reusable_modules/navbar.php';
-    include './db/db_config.php';
+    // include './db/db_config.php';
 ?>
 <div class="dashboard">
     <div class="dashboard-container">

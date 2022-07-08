@@ -25,10 +25,10 @@
                 <input id="input" type="text" name="admin_role" required>
                 <span class="placeholder">Admin Role</span>
             </div>
-            <div class="inputs">
+            <!-- <div class="inputs">
                 <input id="input" type="text" name="admin_status" required>
                 <span class="placeholder">Admin Status</span>
-            </div>
+            </div> -->
             <div class="btns">
                 <button class="cancel"><a href="./admin.php">CANCEL</a></button>
                 <button class="submit" type="submit" name="submit">SUBMIT</button>

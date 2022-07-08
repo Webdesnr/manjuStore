@@ -1,7 +1,7 @@
 <?php
     
     if(isset($_POST['submit'])){
-        include 'db_config.php';
+        // include 'db_config.php';
         
         $id = $_POST['admin_id'];
 
