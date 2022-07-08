@@ -1,3 +1,7 @@
+<?php
+    include './db/login_function.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,27 +16,27 @@
 </head>
 
 <body>
-        <div class="login">
-            <h1 class="title">Welcome To Manju Store</h1>
-            <form action="login.php" method="post">
-                <div class="wrapper">
-                    <div class="inputs">
-                        <input id="input" type="text" name="user_id" required>
-                        <span class="placeholder">UserName</span>
-                    </div>
-                    <div class="inputs">
-                        <input id="input" type="text" name="password" required>
-                        <span class="placeholder">Password</span>
-                    </div>
-                    <div class="btn">
-                        <a class="login-btn" name="login" href="#">LOGIN</a>
-                    </div>
-                    <div class="signup">
-                        <span>Don't Have an account?</span><a href="signup.php">SignUp</a>
-                    </div>
+    <div class="login">
+        <h1 class="title">Welcome To Manju Store</h1>
+        <form action="login.php" method="post">
+            <div class="wrapper">
+                <div class="inputs">
+                    <input id="input" type="text" name="user_name" required>
+                    <span class="placeholder">User Name</span>
                 </div>
-            </form>
-        </div>
+                <div class="inputs">
+                    <input id="input" type="text" name="password" required>
+                    <span class="placeholder">Password</span>
+                </div>
+                <div class="btn">
+                    <button class="login-btn" name="login">LOGIN</button>
+                </div>
+                <div class="signup">
+                    <span>Don't Have an account?</span><a href="signup.php">SignUp</a>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

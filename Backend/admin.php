@@ -3,6 +3,8 @@
     include './reusable_modules/header.php';
     include './reusable_modules/navbar.php';
     include './db/add_admin_function.php';
+    include './db/delete_admin.php';
+
 ?>
 
 <div class="admin">
@@ -50,7 +52,6 @@
                         }
 
                     }
-                    // $conn->close();
                 ?>
 
         </table>
@@ -58,6 +59,5 @@
 </div>
 
 <?php
-    include './db/delete_admin.php';
     include './reusable_modules/footer.php';
 ?>

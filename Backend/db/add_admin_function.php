@@ -18,11 +18,8 @@
             $sql2 = "INSERT INTO admin
                     VALUES ({$id} , '{$admin_id}', '{$name}' , '{$role}' , {$status})";
     
-            if($conn->query($sql2) === TRUE){
+            if($conn->query($sql2) ){
                 $_SESSION['success'] = "<span class = 'success'>Admin Added!</span>";
-                header("location:" . SITEURL . "admin.php");
-            }else{
-                $_SESSION['abort'] = "<span class = 'abort'>Adding Admin Failed!</span>";
                 header("location:" . SITEURL . "admin.php");
             }
         }else{
