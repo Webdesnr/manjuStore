@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+        .login{
+            min-height: 100%;
+            padding: 6rem 0;
+            background-image: url('../assets/images/add-admin-bg.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: auto;
+            justify-items: center;
+            .title{
+                font-family: 'Balsamiq Sans' , cursive;
+                padding-bottom: 2rem;
+                color: #fff;
+            }
+            .wrapper{
+                min-width: 30%;
+                // margin: auto;
+                padding: 3rem 2rem;
+                border: 1px solid #eee;
+                border-radius: 5px;
+                background-color: #fff;
+                .inputs{
+                    padding: 1.5rem 0 ;
+                    position: relative;
+                    .placeholder{
+                        color: #000;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 50%;
+                        left: 5%;
+                        transform: translate(-5% , -50%);
+                        transition: top .2s ease;      
+                        font-size: 1em;
+                    }
+                    input{
+                        width: 100%;
+                        border: 2px solid #eee;
+                        border-radius: 5px;
+                        padding: .7rem  .5rem;
+                        background-color: #fff;
+                        outline: none;
+                        color: #000;
+                        font-size: 1em;
+        
+                        &:focus{
+                            outline: none;
+                        }
+                        &:focus ~ .placeholder,
+                        &:valid ~ .placeholder{
+                            top: 25%;
+                        }
+                    }
+                }
+                .btn{
+                    text-align: center;
+                    .login-btn{
+                        display: inline-block;
+                        padding: .5rem 1.3rem;
+                        text-decoration: none;
+                        font-size: 1em;
+                        font-weight: 700;
+                        border-radius: 5px;
+                        background-image: linear-gradient( 117deg,  rgb(56, 158, 28) 39.2%, rgba(255,255,255,1) 156.2% );
+                        color: white;
+                        
+                    }
+                }
+                .signup{
+                    text-align: center ;
+                    padding: 1rem 0;
+                    font-size: 1em;
+                }
+            }
+        }
+}
+

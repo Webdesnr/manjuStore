@@ -1,0 +1,73 @@
+.admin{
+    grid-column: 2 / span 3;
+    padding: 1rem 3rem;
+    letter-spacing: 1px;
+    .title{
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .admin-button{
+        text-align: right;
+        padding: .5rem 0rem .5rem .5rem;
+        .add-admin{
+            width: auto;
+            font-weight: 700;
+            font-size: .9rem;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 0;
+            background-image: linear-gradient( 60.1deg,  #051D6F 16.4%, #185FF0 64.5% );
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    .admin-wrapper{
+        height: 50%;
+        overflow: auto;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+
+                th,td{
+                    padding: 1rem ;      
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                }
+                th{
+                    text-align: center;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+                    position: sticky;
+                    top: -1px;
+                    background-color: #eee;
+
+                }
+                td{
+                    text-align: center;
+                    button{
+                        cursor: pointer;
+                        border-radius: 5px;
+                        border: 0;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        a{
+                            display: inline-block;
+                            padding: .9rem 1.5rem;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    .modify-btn{
+                        background-image: linear-gradient( 109.9deg,  rgba(251,189,100,1) 1.8%, rgba(255,207,139,1) 95.4% );
+                    }
+                    .delete-btn{
+                        background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+                    }
+                }
+            }
+        }
+    }
+}

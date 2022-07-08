@@ -1,0 +1,8 @@
+.success{
+    color: rgb(78, 206, 78);
+}
+
+.abort{
+    color: #ec7a9a;
+    padding: .5rem 0;
+}

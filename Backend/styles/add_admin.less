@@ -1,0 +1,77 @@
+.add-admin{
+    grid-column: 2 span ;
+    background-image: url(../assets/images/add-admin-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 1rem 0;
+    .title{
+        padding: 0 0 2rem 0;
+        color: white;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .wrapper{
+        width: 30%;
+        margin: auto;
+        padding: 2.5rem 2rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        .inputs{
+            padding: 1.5rem 0 ;
+            position: relative;
+            .placeholder{
+                color: #fff;
+                background-color: #185FF0;
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translate(-5% , -50%);
+                transition: top .2s ease;                
+            }
+            input{
+                width: 100%;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                padding: 1rem .5rem;
+                background-color: #185FF0;
+                outline: none;
+                color: #fff;
+                font-size: 1.2rem;
+
+                &:focus{
+                    outline: none;
+                }
+                &:focus ~ .placeholder,
+                &:valid ~ .placeholder{
+                    top: 22%;
+                }
+            }
+        }
+        .btns{
+            .cancel{
+                border-radius: 5px;
+                background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+                border: 0;
+                a{
+                    display: inline-block;
+                    padding: .7rem 1.3rem;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+            .submit{
+                padding: .7rem 1.3rem;
+                cursor: pointer;
+                border-radius: 5px;
+                border: 0;
+                color: white;
+                font-size: 1rem;
+                font-weight: 700;
+                background-image: linear-gradient( 117deg,  rgb(56, 158, 28) 39.2%, rgba(255,255,255,1) 156.2% );
+            }
+        }
+    }
+}
